@@ -1,0 +1,24 @@
+Package: statinfer
+Type: Package
+Title: Statistical Inference Toolkit
+Version: 0.1.0
+Authors@R: person("RK", email = "tmuxer@disroot.org", role = c("aut", "cre"))
+Description: A from-scratch, pure-R implementation of core statistical
+    machinery: descriptive statistics, special functions (erf, gamma),
+    probability distributions, classical hypothesis tests, ordinary
+    least squares regression, and Bayesian conjugate-prior updating.
+    Ported from an equivalent pure-Python toolkit. R6 classes are used
+    for object-oriented components (distributions, regression, Bayesian
+    models) to mirror the original Python class structure; every formula
+    (mean, variance, erf, gamma, OLS, conjugate posteriors, ...) is
+    hand-implemented rather than delegated to base R or stats.
+License: GPL-2
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports: R6, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Author: RK [aut, cre]
+Maintainer: RK <tmuxer@disroot.org>
+Config/roxygen2/version: 8.1.1
